@@ -1,0 +1,215 @@
+<resources>
+    <!-- termina la seccion -->
+
+    <!-- app social site links section -->
+    <string name="facebook_url">https://www.facebook.com/deporte.uta</string>
+    <string name="youtube_url">https://www.youtube.com/user/Clubdeportivouta</string>
+    <string name="twitter_user_id">https://twitter.com/deportivouta</string>
+    <string name="twitter_url">https://twitter.com/deportivouta?lang=es</string>
+    <string name="google_plus_url">https://www.google.cl/maps/place/18%C2%B029\'25.5%22S+70%C2%B017\'42.3%22W/@-18.490427,-70.2967247,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d-18.4904274!4d-70.2950901</string>
+
+    <!-- terrminos y condiciones del uso de la app -->
+
+
+    <!-- Nombre de la app -->
+    <string name="app_name">Club Deportivo UTA</string>
+    <string name="tagline">Deportes, Actividad Fisica y Vida Saludable</string>
+
+    <string name="site_menu_home">Inicio</string>
+    <string name="site_menu_menus">Menu</string>
+    <string name="site_menu_categories">Coordinaciones</string>
+    <string name="site_menu_favourite">Marcadores</string>
+    <string name="site_menu_home_cat">Inicio Categorias</string>
+
+    <string name="social">Social</string>
+    <string name="youtube">MEFCCA</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="google_plus">Como llegar</string>
+
+
+    <string name="share">Compartir</string>
+    <string name="rate">Calificar aplicación</string>
+    <string name="settings">Ajustes</string>
+    <string name="exit">Salir</string>
+    <!-- final de la configuracion del sitio-->
+
+    <!-- app link del sitio plataforma de control: www.myimagina.website -->
+    <string name="app_link_base_url">myimagina.website</string>
+    <string name="app_link_path_prefix">myimagina.website</string>
+    <!-- end of the app link section -->
+
+
+    <string name="featured_posts">Destacado</string>
+    <string name="see_more">Ver más</string>
+    <string name="recent_posts">Publicaciones Recientes</string>
+    <string name="favourite">Marcadores</string>
+    <string name="category_list">Categorias</string>
+    <string name="home_cat_list">Inicio Categorias</string>
+    <string name="menu_list">Menus</string>
+    <string name="loadmore">Cargando más publicaciones, Favor esperar...</string>
+    <string name="details">Detalles de la Publicación</string>
+
+
+    <string name="post_list">Lista de publicaciones</string>
+    <string name="tapAgain">Toque de nuevo para salir!</string>
+    <string name="no_internet">Sin internet!</string>
+    <string name="connect">Conectar</string>
+    <string name="others">Otros</string>
+    <string name="search">Buscar</string>
+    <string name="refresh">Refrescar</string>
+    <string name="close">Cerrar</string>
+    <string name="says">Dilo: </string>
+    <string name="welcome_message">Bienvenidos</string>
+    <string name="successful_reply">Respondió exitosamente!</string>
+    <string name="error_message">Lo sentimos, algunos errores ocurrieron!</string>
+    <string name="custom_link">Enlace personalizado</string>
+    <string name="permission_not_granted">Permission not granted!</string>
+
+
+    <string name="empty_result">No hay información!</string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+
+    <string name="share_text">App Club Deportivo:</string>
+    <string name="send_to">Enviar a: </string>
+
+    <string name="close_prompt">Seguro que quieres cerrar la aplicación?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+
+    <string name="install_messenger">Instalar facebook messenger</string>
+    <string name="tts_wait_msg">Este artículo será leído en breve. Por favor, espera un momento...</string>
+    <string name="tts_install_msg">Por favor instale el paquete de inglés desde aquí</string>
+
+
+    // Notification
+    <string name="pref_notification_title">Notificación</string>
+    <string name="pref_notification_summ">Activar / desactivar la notificación</string>
+    <string name="pref_zoom_title">Controlador de zoom</string>
+    <string name="pref_zoom_summ">Habilitar el controlador de zoom para acercar / alejar páginas</string>
+    <string name="pref_text_title">Tamano del texto</string>
+    <string name="select_size">Seleccionar tamaño de texto</string>
+    <string name="delete_notify_msg">Quieres borrar esta notificación?</string>
+    <string name="delete_all_notify_msg">Quieres borrar todas las notificaciones?</string>
+    <string name="empty_list">La lista ya está vacía!</string>
+
+    <string name="small_text">Pequeña</string>
+    <string name="default_text">Normal</string>
+    <string name="large_text">Grande</string>
+
+    <string name="matches">matches</string>
+    <string name="placeholder">..</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="read_post">Leer publicación</string>
+    <string name="notification_title">Título de la notificación: </string>
+    <string name="notification_details">Detalles de la notificación: </string>
+
+    <string name="failed">Ha fallado</string>
+
+    <string name="admin">Administrador</string>
+    <string name="default_str">Default</string>
+    <string name="author_name">Me</string>
+
+    <string name="delete_fav_item">Quieres eliminar esta publicación de la lista de marcadores?</string>
+    <string name="delete_all_fav_item">Desea eliminar todas las publicaciones de la lista de marcadores?</string>
+    <string name="delete_all">Borrar todo</string>
+    <string name="site_menu_actDeportivas">Actividades Deportivas</string>
+    <string name="site_menu_mis_actividades">Mis Actividades</string>
+    <string name="password">Contraseña</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="sign_up">No tienes una cuenta? Registrate</string>
+    <string name="welcome">Bienvenidos al Club Deportivo UTA</string>
+    <string name="email">Correo</string>
+    <string name="logocduta">LogoCDUTA</string>
+
+
+    <string name="label_google_sign_in">Firebase + Google Sign In</string>
+    <string name="desc_google_sign_in">Use a Google Sign In credential to authenticate with Firebase.</string>
+
+    <string name="label_facebook_login">Firebase + Facebook Login</string>
+    <string name="desc_facebook_login">Use a Facebook Login credential to authenticate with Firebase.</string>
+
+    <string name="label_twitter_login">Firebase + Twitter Login</string>
+    <string name="desc_twitter_login">Use a Twitter Login credential to authenticate with Firebase.</string>
+
+    <string name="label_emailpassword">Email/Password Authentication</string>
+    <string name="desc_emailpassword">Use an email and password to authenticate with Firebase.</string>
+
+    <string name="label_passwordless">Passwordless Authentication</string>
+    <string name="desc_passwordless">Use only an email to authenticate with Firebase.</string>
+
+    <string name="label_phone_auth">Phone Number Authentication</string>
+    <string name="desc_phone_auth">Use a phone number to authenticate with Firebase.</string>
+
+    <string name="label_anonymous_auth">Anonymous Authentication</string>
+    <string name="desc_anonymous_auth">Sign in anonymously and then later upgrade to a full Firebase Auth user.</string>
+
+    <string name="label_custom_auth">Custom Authentication</string>
+    <string name="desc_custom_auth">Use a custom token signed by your own server to authenticate with Firebase.</string>
+
+    <string name="label_firebase_ui">FirebaseUI Auth</string>
+    <string name="desc_firebase_ui">Use the FirebaseUI-Android library to authenticate with Firebase.</string>
+
+    <string name="hint_user_id">User ID</string>
+    <string name="get_custom_token">Get Token</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="send_link">Send Link</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="loading">Cargando...</string>
+    <string name="custom_token">Custom Token</string>
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="token_null">Token: null</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="status_code_sent">Code Sent</string>
+    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_succeeded">Verification succeeded</string>
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="instant_validation">(instant validation)</string>
+
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+
+    <string name="google_status_fmt">Google User: %s</string>
+    <string name="google_title_text">Google Sign In</string>
+
+    <string name="facebook_status_fmt">Facebook User: %s</string>
+    <string name="facebook_title_text">Facebook Login</string>
+
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+
+    <string name="passwordless_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="passwordless_title_text">Passwordless Sign In</string>
+    <string name="status_email_not_sent">Send link to your email to get started.</string>
+    <string name="status_email_sent">Link sent, check your email to continue.</string>
+    <string name="status_link_found">Link received, enter email to sign in.</string>
+
+    <string name="phone_title_text">Phone Number</string>
+
+    <string name="twitter_status_fmt">Twitter User: %s</string>
+    <string name="twitter_title_text">Twitter Login</string>
+
+    <string name="firebaseui_status_fmt">Firebase User: %s</string>
+    <string name="firebaseui_title_text">FirebaseUI Auth</string>
+
+    <string name="id_fmt">User ID: %s</string>
+    <string name="email_fmt">Email: %s</string>
+    <string name="nombres">Nombres</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="already_member">Ya tienes una cuenta? Ingresa</string>
+    <string name="registro">Registro</string>
+    <string name="actividades_deportivas">Actividades Deportivas</string>
+
+</resources>

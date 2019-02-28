@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_mis_actdep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="0dp"
+            android:minHeight="?attr/actionBarSize"
+            android:weightSum="1"
+            app:elevation="0dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/toolbar_boarder" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar_mis_actdep"
+        android:nestedScrollingEnabled="true"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlNoActDepInscritas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_20dp">
+
+                <TextView
+                    android:id="@+id/noinscrito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Aún no tienes ninguna actividad deportiva inscrita."
+                    android:textSize="32sp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/margin_20dp"/>
+
+                <TextView
+                    android:id="@+id/textoInscribir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/noinscrito"
+                    android:text="Inscribete haciendo click en el botón +"
+                    android:textSize="20sp"
+                    android:layout_margin="@dimen/margin_20dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/misActividadesDeportivasLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvMisActividades"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+                <include
+                    android:id="@+id/rv_misActDep_load"
+                    layout="@layout/progress_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rvMisActividades"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_common_loader" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabMisActDep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:gravity="bottom"
+        android:src="@drawable/round_add_white" />
+
+</android.support.design.widget.CoordinatorLayout>

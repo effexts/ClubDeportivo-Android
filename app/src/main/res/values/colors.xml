@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#446ba9</color>
+    <color name="colorPrimaryDark">#00417a</color>
+    <color name="colorAccent">#7699db</color>
+    <color name="colorPrimary21">#deb01f</color>
+    <color name="colorAccent21">#ffe257</color>
+
+    <!--Common colors-->
+    <color name="bg_splash">#446BA9</color>
+    <color name="page_bg">#446ba9</color>
+    <color name="page_bg_dim">#7699db</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#F44336</color>
+    <color name="transparent_black">#99000000</color>
+    <color name="transparent_white">#AAFFFFFF</color>
+    <color name="green">#fc7ad1</color>
+    <color name="blue">#93278f</color>
+    <color name="orange">#f9069c</color>
+    <color name="gray">#fcee21</color>
+    <color name="purple">#db9600</color>
+    <color name="imgPlaceholder">#ffffff</color>
+
+    <color name="trans">#80000000</color>
+    <color name="detailsToolbar">#55000000</color>
+
+    <color name="notification_card_bg">#EFEFEF</color>
+
+    <color name="title_color">#ffffff</color>
+    <color name="toolbar_boarder">#00417a</color>
+
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_500">#9E9E9E</color>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyt_actdep_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:visibility="gone">
+
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:background="@color/toolbar_boarder" />
+
+    <TextView
+        android:id="@+id/actdep_details_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewDivider"
+        android:layout_margin="@dimen/margin_8dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="This is sample text do yoy know that it supports multi-line" />
+
+    <WebView
+        android:id="@+id/actdep_details_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actdep_details_title_text"
+        android:layout_margin="@dimen/margin_8dp"
+        android:paddingBottom="@dimen/margin_8dp" />
+
+</RelativeLayout>
