@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.Space;
@@ -12,7 +13,10 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
+
+import java.io.IOException;
 
 import cl.uta.clubdeportivo.R;
 import cl.uta.clubdeportivo.utility.ActivityUtils;
@@ -73,13 +77,14 @@ public class SplashActivity extends AppCompatActivity {
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        String msg = "subscrito al tema Noticias";
+                        String msg = "Bienvenidos";
                         if (!task.isSuccessful()) {
                             msg = "falló al subscribir";
                         }
                         Toast.makeText(SplashActivity.this, msg, Toast.LENGTH_LONG).show();
                     }
                 });
+        Log.d("TODOSLOSTOKENS", "initSubscribe Token: " + FirebaseInstanceId.getInstance().getToken());
     }
 }
 

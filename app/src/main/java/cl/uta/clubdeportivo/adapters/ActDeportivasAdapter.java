@@ -68,6 +68,7 @@ public class ActDeportivasAdapter extends RecyclerView.Adapter<ActDeportivasAdap
                 itemClickListener.onItemClick(getLayoutPosition(), v);
             }
         }
+
     }
 
     @Override

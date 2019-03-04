@@ -44,7 +44,7 @@
     <string name="see_more">Ver más</string>
     <string name="recent_posts">Publicaciones Recientes</string>
     <string name="favourite">Marcadores</string>
-    <string name="category_list">Categorias</string>
+    <string name="category_list">Coordinaciones</string>
     <string name="home_cat_list">Inicio Categorias</string>
     <string name="menu_list">Menus</string>
     <string name="loadmore">Cargando más publicaciones, Favor esperar...</string>
@@ -64,7 +64,7 @@
     <string name="successful_reply">Respondió exitosamente!</string>
     <string name="error_message">Lo sentimos, algunos errores ocurrieron!</string>
     <string name="custom_link">Enlace personalizado</string>
-    <string name="permission_not_granted">Permission not granted!</string>
+    <string name="permission_not_granted">Permission denegado!</string>
 
 
     <string name="empty_result">No hay información!</string>
@@ -91,6 +91,7 @@
     <string name="pref_text_title">Tamano del texto</string>
     <string name="select_size">Seleccionar tamaño de texto</string>
     <string name="delete_notify_msg">Quieres borrar esta notificación?</string>
+    <string name="delete_notify_act">Quieres borrar esta actividad?</string>
     <string name="delete_all_notify_msg">Quieres borrar todas las notificaciones?</string>
     <string name="empty_list">La lista ya está vacía!</string>
 

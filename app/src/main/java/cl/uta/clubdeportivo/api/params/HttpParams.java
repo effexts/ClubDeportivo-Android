@@ -17,8 +17,10 @@ public class HttpParams {
     public static final String API_POST = "post";
     public static final String API_PARENT = "parent";
     public static final String API_TEXT_SEARCH = "search";
-    public static final String API_ACT_ID = "id";
     public static final String API_FIREBASE_UID = "uid";
+    public static final String API_ACT_ID = "id";
+    public static final String API_USER_ID = "id";
+
 
     public static final String API_CATEGORIES = "wp-json/wp/v2/categories?page=1&";
     public static final String API_FEATURED_POSTS = "wp-json/wp/v2/posts?per_page=" + API_RECENT_ITEM_PER_PAGE + "&" + API_EMBED + "&" + API_FEATURED;
@@ -34,6 +36,7 @@ public class HttpParams {
     public static final String API_GET_ACTDEPS = "/wp-json/wp/v2/actividades?per_page=50";
     public static final String API_GET_ACTDEPS_DETAILS = "/wp-json/wp/v2/actividades/{"+ API_ACT_ID +"}";
     public static final String API_GET_MISACT_DEP = "/wp-json/wp/v2/appuser";
+    public static final String API_POST_MISACT_DEP = "/wp-json/wp/v2/appuser/{" + API_USER_ID +"}";
 
 
 

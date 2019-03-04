@@ -104,13 +104,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.ActDeportivasDetailsActivity" />
-        <activity android:name=".activity.MisActDepActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.RUN" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".activity.MisActDepActivity"
+            android:theme="@style/AppTheme"/>
 
-        <service android:name=".notification.MyFirebaseMessagingService">
+        <service android:name=".notification.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>

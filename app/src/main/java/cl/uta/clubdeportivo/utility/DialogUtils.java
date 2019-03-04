@@ -26,6 +26,10 @@ public class DialogUtils {
         showDialog(activity, title, message, positiveButtonText, negativeButtonText, isCancellable, dialogActionListener);
     }
 
+    public static void showDialogPrompt2(Activity activity, int position, String title, String message, String positiveButtonText, String negativeButtonText, boolean isCancellable, final DialogActionListener dialogActionListener) {
+        showDialog(activity, title, message, positiveButtonText, negativeButtonText, isCancellable, dialogActionListener);
+    }
+
     /**
      * Use this method if you want to show any message in dialog, message dialog is automatically cancellable
      *

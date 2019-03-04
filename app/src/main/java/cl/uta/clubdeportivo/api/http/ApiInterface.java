@@ -5,6 +5,7 @@ import com.google.gson.JsonElement;
 import cl.uta.clubdeportivo.api.models.actividades.ActDeportivas;
 import cl.uta.clubdeportivo.api.models.appusers.AppUserBody;
 import cl.uta.clubdeportivo.api.models.appusers.AppUsers;
+import cl.uta.clubdeportivo.api.models.appusers.AppUsersTalleres;
 import cl.uta.clubdeportivo.api.models.appusers.TokenWP;
 import cl.uta.clubdeportivo.api.models.appusers.TokenWPBody;
 import cl.uta.clubdeportivo.api.models.category.Category;
@@ -92,4 +93,8 @@ public interface ApiInterface {
 
     @GET(HttpParams.API_GET_MISACT_DEP)
     Call<JsonElement> getMisActividades(@Query("filter[meta_key]") String user_id, @Query("filter[meta_value]") String uid );
+
+    @POST(HttpParams.API_POST_MISACT_DEP)
+    @Headers({ "Content-Type: application/json"})
+    Call<JsonElement> postListaTalleres(@Header("Authorization") String token, @Path(HttpParams.API_USER_ID) String user_id, @Body String lista_talleres);
 }
