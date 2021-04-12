@@ -29,6 +29,7 @@ public class MenuCommonAdapter extends RecyclerView.Adapter<MenuCommonAdapter.Vi
     private ArrayList<AnyMenu> arrayList;
     private Context context;
     private ListItemClickListener itemClickListener;
+    Random rand = new Random();
 
     public MenuCommonAdapter(Context context, ArrayList<AnyMenu> arrayList) {
         this.context = context;
@@ -93,7 +94,7 @@ public class MenuCommonAdapter extends RecyclerView.Adapter<MenuCommonAdapter.Vi
         mainHolder.tvMenuItem.setText(Html.fromHtml(model.getName()));
 
 
-        Random rand = new Random();
+
         int i = rand.nextInt(5) + 1;
         switch (i) {
             case 1:

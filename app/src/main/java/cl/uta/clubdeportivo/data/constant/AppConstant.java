@@ -13,7 +13,7 @@ public class AppConstant {
     public static final String BUNDLE_KEY_URL = "url";
     public static final String BUNDLE_FROM_PUSH = "from_push";
     public static final String BUNDLE_FROM_APP_LINK = "from_app_link";
-    public static final long SITE_CACHE_SIZE = 10 * 1024 * 1024;
+    public static final long SITE_CACHE_SIZE = 10L * 1024 * 1024;
     public static final String BUNDLE_KEY_POST_ID = "post_id";
     public static final String BUNDLE_KEY_POST = "post";
     public static final String BUNDLE_KEY_CATEGORY_ID = "category_id";

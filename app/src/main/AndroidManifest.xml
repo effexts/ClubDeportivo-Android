@@ -16,13 +16,15 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ActDeportivasActivity">
+        <activity android:name=".activity.ActDeportivasActivity"
+            android:permission="cl.uta.clubdeportivo.PERMISO_D">
             <intent-filter>
                 <action android:name="android.intent.action.RUN" />
             </intent-filter>
         </activity>
         <activity
             android:name=".activity.SplashActivity"
+            android:permission="cl.uta.clubdeportivo.PERMISO_D"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
@@ -98,13 +100,15 @@
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@style/AppTheme" />
         <activity android:name=".activity.RegistroActivity" />
-        <activity android:name=".activity.TestActivity">
+        <activity android:name=".activity.TestActivity"
+            android:permission="cl.uta.clubdeportivo.PERMISO_D">
             <intent-filter>
                 <action android:name="android.intent.action.RUN" />
             </intent-filter>
         </activity>
         <activity android:name=".activity.ActDeportivasDetailsActivity" />
         <activity android:name=".activity.MisActDepActivity"
+            android:permission="cl.uta.clubdeportivo.PERMISO_D"
             android:theme="@style/AppTheme"/>
 
         <service android:name=".notification.MyFirebaseMessagingService"
@@ -122,5 +126,8 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
     </application>
-
+    <permission android:name="cl.uta.clubdeportivo.PERMISO_D"
+        android:description="@string/perm_desc_PERMISO_D"
+        android:label="@string/perm_label_PERMISO_D"
+        android:protectionLevel="dangerous" />
 </manifest>

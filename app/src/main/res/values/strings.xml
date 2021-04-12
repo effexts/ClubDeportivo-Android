@@ -213,4 +213,7 @@
     <string name="registro">Registro</string>
     <string name="actividades_deportivas">Actividades Deportivas</string>
 
+    <string name="perm_desc_PERMISO_D">Permiso de actividades</string>
+    <string name="perm_label_PERMISO_D">Permiso de act.</string>
+
 </resources>
