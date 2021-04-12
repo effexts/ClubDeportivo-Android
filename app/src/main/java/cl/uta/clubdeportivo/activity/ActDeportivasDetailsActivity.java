@@ -79,7 +79,7 @@ public class ActDeportivasDetailsActivity extends BaseActivity {
     private void initView() {
         setContentView(R.layout.activity_actdep_details);
 
-        lytActDepDetailsView = (RelativeLayout) findViewById(R.id.lyt_actdep_details);
+        lytActDepDetailsView = findViewById(R.id.lyt_actdep_details);
         //lytParentView.setVisibility(View.GONE);
 
         imgPost = findViewById(R.id.actdep_details_img);
@@ -173,14 +173,13 @@ public class ActDeportivasDetailsActivity extends BaseActivity {
                 if (response.isSuccessful()) {
                     // bind data
                     model = response.body();
-                    ActDeportivas m = model;
 
                     // visible parent view
                     lytActDepDetailsView.setVisibility(View.VISIBLE);
 
                     tvActDepTitle.setText(Html.fromHtml(model.getTitleActDep().getRendered()));
 
-                    String imgUrl = null;
+                    String imgUrl;
                     imgUrl = model.getImagen().getGuid();
 
                     if (imgUrl != null) {
@@ -277,6 +276,7 @@ public class ActDeportivasDetailsActivity extends BaseActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         if (resultCode != Activity.RESULT_OK) {
             return;
         }
