@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 /**
 
  */
-public class PhenomenaTextView extends android.support.v7.widget.AppCompatTextView {
+public class PhenomenaTextView extends androidx.appcompat.widget.AppCompatTextView {
 
     private Context context;
     private AttributeSet attrs;

@@ -2,8 +2,8 @@ package cl.uta.clubdeportivo.activity;
 
 import android.os.Bundle;
 import android.os.StrictMode;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 
 import java.io.IOException;
@@ -11,11 +11,6 @@ import java.util.List;
 
 import cl.uta.clubdeportivo.api.http.ApiUtils;
 import cl.uta.clubdeportivo.api.models.actividades.ActDeportivas;
-import cl.uta.clubdeportivo.api.models.appusers.AppUserBody;
-import cl.uta.clubdeportivo.api.models.appusers.AppUsers;
-import cl.uta.clubdeportivo.api.models.appusers.TokenWP;
-import cl.uta.clubdeportivo.api.models.appusers.TokenWPBody;
-import retrofit2.Call;
 import retrofit2.Response;
 
 public class TestActivity extends AppCompatActivity {

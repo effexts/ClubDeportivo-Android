@@ -3,8 +3,8 @@ package cl.uta.clubdeportivo.activity;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
+import com.google.android.material.tabs.TabLayout;
+import androidx.viewpager.widget.ViewPager;
 import android.view.MenuItem;
 
 import cl.uta.clubdeportivo.R;
