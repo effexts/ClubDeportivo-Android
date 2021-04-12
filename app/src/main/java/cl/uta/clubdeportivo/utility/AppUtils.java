@@ -8,8 +8,8 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.Uri;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.core.app.ActivityCompat;
 import android.view.View;
 import android.widget.Toast;
 

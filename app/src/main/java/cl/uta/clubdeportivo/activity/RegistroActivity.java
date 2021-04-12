@@ -3,9 +3,9 @@ package cl.uta.clubdeportivo.activity;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.os.StrictMode;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -26,15 +26,9 @@ import cl.uta.clubdeportivo.api.http.ApiUtils;
 import cl.uta.clubdeportivo.api.models.appusers.AppUserBody;
 import cl.uta.clubdeportivo.api.models.appusers.AppUsers;
 import cl.uta.clubdeportivo.api.models.appusers.TokenWP;
-import cl.uta.clubdeportivo.api.models.appusers.TokenWPBody;
 import cl.uta.clubdeportivo.data.preference.AppPreference;
 import cl.uta.clubdeportivo.utility.ActivityUtils;
-import cl.uta.clubdeportivo.utility.AppUtils;
-import retrofit2.Call;
-import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.http.POST;
 
 public class RegistroActivity extends AppCompatActivity {
 

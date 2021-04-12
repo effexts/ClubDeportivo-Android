@@ -1,13 +1,12 @@
 package cl.uta.clubdeportivo.activity;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,9 +21,7 @@ import cl.uta.clubdeportivo.R;
 import cl.uta.clubdeportivo.adapters.ActDeportivasAdapter;
 import cl.uta.clubdeportivo.api.http.ApiUtils;
 import cl.uta.clubdeportivo.api.models.actividades.ActDeportivas;
-import cl.uta.clubdeportivo.data.constant.AppConstant;
 import cl.uta.clubdeportivo.listeners.ListItemClickListener;
-import cl.uta.clubdeportivo.utility.ActivityUtils;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

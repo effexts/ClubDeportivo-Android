@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 /**
 
  */
-public class MontserratTextView extends android.support.v7.widget.AppCompatTextView {
+public class MontserratTextView extends androidx.appcompat.widget.AppCompatTextView {
 
     private Context context;
     private AttributeSet attrs;

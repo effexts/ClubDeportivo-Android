@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 /**
 
  */
-public class RobotoTextView extends android.support.v7.widget.AppCompatTextView {
+public class RobotoTextView extends androidx.appcompat.widget.AppCompatTextView {
 
     private Context context;
     private AttributeSet attrs;
