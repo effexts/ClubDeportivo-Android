@@ -110,7 +110,7 @@ public class CategoryListActivity extends BaseActivity {
 
             @Override
             public void onFailure(Call<List<Category>> call, Throwable t) {
-                t.printStackTrace();
+
                 hideLoader();
                 showEmptyView();
             }

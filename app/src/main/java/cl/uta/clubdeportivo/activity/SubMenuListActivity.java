@@ -108,7 +108,7 @@ public class SubMenuListActivity extends BaseActivity {
             public void onFailure(Call<SubMenu> call, Throwable t) {
                 hideLoader();
                 showEmptyView();
-                t.printStackTrace();
+
             }
         });
     }

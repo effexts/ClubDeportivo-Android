@@ -260,7 +260,6 @@ public class PostDetailsActivity extends BaseActivity {
 
             @Override
             public void onFailure(Call<PostDetails> call, Throwable t) {
-                t.printStackTrace();
                 // hide common loader
                 hideLoader();
                 // show empty view

@@ -131,7 +131,6 @@ public class PostListActivity extends BaseActivity {
 
             @Override
             public void onFailure(Call<List<Post>> call, Throwable t) {
-                t.printStackTrace();
                 showEmptyView();
             }
         });
@@ -150,7 +149,6 @@ public class PostListActivity extends BaseActivity {
             @Override
             public void onFailure(Call<List<Post>> call, Throwable t) {
                 showEmptyView();
-                t.printStackTrace();
             }
         });
     }
@@ -167,7 +165,6 @@ public class PostListActivity extends BaseActivity {
 
             @Override
             public void onFailure(Call<List<Post>> call, Throwable t) {
-                t.printStackTrace();
                 showEmptyView();
             }
         });

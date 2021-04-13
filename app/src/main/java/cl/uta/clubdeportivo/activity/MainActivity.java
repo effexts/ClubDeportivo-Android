@@ -472,7 +472,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onFailure(Call<List<MainMenu>> call, Throwable t) {
                 showEmptyView();
-                t.printStackTrace();
+
             }
         });
 
@@ -508,7 +508,7 @@ public class MainActivity extends BaseActivity {
 
                 @Override
                 public void onFailure(Call<SubMenu> call, Throwable t) {
-                    t.printStackTrace();
+
 
                     // hide common loader
                     hideLoader();
@@ -559,7 +559,7 @@ public class MainActivity extends BaseActivity {
 
             @Override
             public void onFailure(Call<List<Post>> call, Throwable t) {
-                t.printStackTrace();
+
                 showEmptyView();
             }
         });
@@ -623,7 +623,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onFailure(Call<List<Post>> call, Throwable t) {
                 showEmptyView();
-                t.printStackTrace();
+
             }
         });
     }
@@ -652,7 +652,7 @@ public class MainActivity extends BaseActivity {
 
             @Override
             public void onFailure(Call<List<Post>> call, Throwable t) {
-                t.printStackTrace();
+
                 pbSelectableCatLoader.setVisibility(View.GONE);
             }
         });

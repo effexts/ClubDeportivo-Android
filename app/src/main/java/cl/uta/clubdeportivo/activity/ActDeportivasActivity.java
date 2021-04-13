@@ -31,7 +31,6 @@ public class ActDeportivasActivity extends BaseActivity {
     private ActDeportivasActivity mActivity;
     private Context mContext;
     private List<ActDeportivas> actDeportivasList;
-    private RelativeLayout bottomLayout;
     private RecyclerView rvActividades;
     private GridLayoutManager mLayoutManager;
     private ActDeportivasAdapter actDepAdapter;
@@ -64,7 +63,7 @@ public class ActDeportivasActivity extends BaseActivity {
 
     private void initView() {
         setContentView(R.layout.activity_act_deportivas);
-        bottomLayout = findViewById(R.id.rv_actdep_load);
+        RelativeLayout bottomLayout = findViewById(R.id.rv_actdep_load);
         rvActividades = findViewById(R.id.rvActividades);
         pbActividades = findViewById(R.id.pbActSectionLoader);
         mLayoutManager = new GridLayoutManager(mActivity, 1, GridLayoutManager.VERTICAL, false);
@@ -104,7 +103,6 @@ public class ActDeportivasActivity extends BaseActivity {
 
             @Override
             public void onFailure(Call<List<ActDeportivas>> call, Throwable t) {
-                t.printStackTrace();
                 hideLoader();
                 showEmptyView();
 

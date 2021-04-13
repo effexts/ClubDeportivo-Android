@@ -31,14 +31,12 @@ public class ActDeportivasDetailsActivity extends BaseActivity {
 
     // Variables
     private Activity mActivity;
-    private Context mContext;
 
     // init views
     private RelativeLayout lytActDepDetailsView;
     private int clickedId;
     private ImageView imgPost;
-    private TextView tvActDepTitle, tvPostAuthor, tvPostDate;
-    private WebView actdep_webView;
+    private TextView tvActDepTitle;//, tvPostAuthor, tvPostDate;
     private ImageButton imgBtnSpeaker, imgBtnShare;
     private ActDeportivas model = null;
 
@@ -48,9 +46,6 @@ public class ActDeportivasDetailsActivity extends BaseActivity {
     private String ttsText;
 
     private WebEngine webEngine;
-
-    private boolean fromPush = false, fromAppLink = false;
-    private String TAG = "ClubDeportivo: ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,13 +59,12 @@ public class ActDeportivasDetailsActivity extends BaseActivity {
 
     private void initVar() {
         mActivity = ActDeportivasDetailsActivity.this;
-        mContext = mActivity.getApplicationContext();
-
 
 
         Bundle extras = getIntent().getExtras();
         if(extras != null) {
             clickedId = extras.getInt("act_id", 0);
+            String TAG = "ClubDeportivo: ";
             Log.d(TAG, "initVar: "+clickedId);
         }
 
@@ -100,7 +94,7 @@ public class ActDeportivasDetailsActivity extends BaseActivity {
 
     public void initWebEngine() {
 
-        actdep_webView = findViewById(R.id.actdep_details_web_view);
+        WebView actdep_webView = findViewById(R.id.actdep_details_web_view);
 
         webEngine = new WebEngine(actdep_webView, mActivity);
         webEngine.initWebView();
@@ -190,11 +184,11 @@ public class ActDeportivasDetailsActivity extends BaseActivity {
 
                     String contentText = model.getContent().getRendered();
 
-                    ttsText = new StringBuilder(Html.fromHtml(model.getTitleActDep().getRendered())).append(AppConstant.DOT).append(Html.fromHtml(model.getContent().getRendered())).toString();
+                    ttsText = Html.fromHtml(model.getTitleActDep().getRendered()) + AppConstant.DOT + Html.fromHtml(model.getContent().getRendered());
 
                     //actdep_webView.loadData(contentText, "text/html", "UTF-8");
 
-                    contentText = new StringBuilder().append(AppConstant.CSS_PROPERTIES).append(contentText).toString();
+                    contentText = AppConstant.CSS_PROPERTIES + contentText;
                     webEngine.loadHtml(contentText);
 
                 } else {
@@ -205,7 +199,7 @@ public class ActDeportivasDetailsActivity extends BaseActivity {
 
             @Override
             public void onFailure(Call<ActDeportivas> call, Throwable t) {
-                t.printStackTrace();
+
                 // hide common loader
                 hideLoader();
                 // show empty view
@@ -284,6 +278,8 @@ public class ActDeportivasDetailsActivity extends BaseActivity {
 
 
     private void goToHome(){
+        boolean fromAppLink = false;
+        boolean fromPush = false;
         if(fromPush || fromAppLink) {
             Intent intent = new Intent(this, MainActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

@@ -110,7 +110,7 @@ public class MenuListActivity extends BaseActivity {
             public void onFailure(Call<List<Category>> call, Throwable t) {
                 hideLoader();
                 showEmptyView();
-                t.printStackTrace();
+
             }
         });
 
@@ -150,7 +150,7 @@ public class MenuListActivity extends BaseActivity {
         public void onFailure (Call < List < MainMenu >> call, Throwable t){
             hideLoader();
             showEmptyView();
-            t.printStackTrace();
+
         }
     });
 
@@ -211,7 +211,7 @@ public class MenuListActivity extends BaseActivity {
             public void onFailure(Call<SubMenu> call, Throwable t) {
                 hideLoader();
                 showEmptyView();
-                t.printStackTrace();
+
             }
         });
 

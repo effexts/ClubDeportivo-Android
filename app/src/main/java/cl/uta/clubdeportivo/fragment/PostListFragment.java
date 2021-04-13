@@ -163,7 +163,6 @@ public class PostListFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Post>> call, Throwable t) {
-                t.printStackTrace();
                 showEmptyView();
             }
         });
@@ -180,7 +179,6 @@ public class PostListFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Post>> call, Throwable t) {
-                t.printStackTrace();
                 showEmptyView();
             }
         });

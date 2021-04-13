@@ -202,7 +202,7 @@ public class MisActDepActivity extends BaseActivity {
 
             @Override
             public void onFailure(Call<List<ActDeportivas>> call, Throwable t) {
-                t.printStackTrace();
+
                 hideLoader();
                 showEmptyView();
 

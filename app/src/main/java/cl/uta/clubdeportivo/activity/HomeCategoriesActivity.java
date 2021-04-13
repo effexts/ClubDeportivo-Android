@@ -184,7 +184,7 @@ public class HomeCategoriesActivity extends BaseActivity implements OnCategoryLi
 
             @Override
             public void onFailure(Call<List<Category>> call, Throwable t) {
-                t.printStackTrace();
+
                 showEmptyView();
             }
         });
